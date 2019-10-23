@@ -1,22 +1,22 @@
-# Your project name
+# ScreenCasting
 
 ## Description
 
-Describe briefly what your project is all about.
+Our project is about sharing screens with people and allowing them to text to each other while on it. We are also implementing a voice chat feautre in our project. 
 
 ## Deliverables
 
-List all the things you want to deliver by the end of the semester.
+We wish to deliver a project that shows our indepth knowledge of servers and socket programming while showing off our skills on project management and the ablity to collaberate with people. 
 
 ## Features 
 List all the features of your application in the order of priority.
-1. Feature #1
-2. Feature #2
-3. Feature #3 
-...
+1. Share Screen
+2. Text Chat
+3. Voice Chat
+
 
 ## Team members
 
-* Roger Federer, Team Lead
-* Tiger Woods, Bug Fixer
+* Yuan Gao, Back end
+* Jason Ngan, Front end
 
