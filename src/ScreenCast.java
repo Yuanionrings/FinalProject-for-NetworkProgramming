@@ -8,6 +8,7 @@ import java.io.ObjectOutputStream;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Scanner;
 
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
@@ -25,6 +26,20 @@ public class ScreenCast {
 		new ScreenShare().interactive();
 	}
 
+	/*
+	 * Decide if user is host or client
+	 */
+	private void interactive() {
+		Scanner s = new Scanner(System.in);
+		
+		while (true) {
+			InetAddress addr = InetAddress.getByName("localhost");
+			System.out.print(addr.getCanonicalHostName() + ">>> ");
+			
+			String temp = s.nextLine();
+		}
+	}
+	
 	/*
 	 * Handles client side interactions
 	 */
