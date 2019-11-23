@@ -106,5 +106,4 @@ public class ScreenCast {
 		socket.close();
 		server.close();
 	}
-	
 }
