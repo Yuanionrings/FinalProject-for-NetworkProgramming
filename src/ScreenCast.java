@@ -23,9 +23,8 @@ import java.util.StringTokenizer;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
-
 public class ScreenCast {
-	ServerSocket  server;
+	ServerSocket server;
 	Socket socket;
 
 	public static void main(String[] args) {
@@ -35,7 +34,7 @@ public class ScreenCast {
 
 		new ScreenShare().interactive();
 	}
-	
+
 	private boolean mouseMove;
 
 	/*
@@ -59,7 +58,7 @@ public class ScreenCast {
 
 		}
 	}
-	
+
 	/**
 	 * Helper class for intepreting inputs
 	 * 
@@ -75,18 +74,18 @@ public class ScreenCast {
 			String serverAddr = tokenizer.nextToken();
 			String port = tokenizer.nextToken();
 			client(serverAddr, Integer.parseInt(port));
-		} else if (commandToken.equals("close")){
+		} else if (commandToken.equals("close")) {
 			close();
-		} else if (commandToken.equals("mousemove")){
-			this.mouseMove= true;
-		} else if (commandToken.equals("nomousemove")){
-			this.mouseMove= false;
+		} else if (commandToken.equals("mousemove")) {
+			this.mouseMove = true;
+		} else if (commandToken.equals("nomousemove")) {
+			this.mouseMove = false;
 		} else {
 			System.out.println("Unrecognized Command");
 		}
 
 	}
-	
+
 	/*
 	 * Handles client side interactions
 	 */
@@ -102,8 +101,8 @@ public class ScreenCast {
 			Robot r = new Robot();
 			long startTime = System.currentTimeMillis();
 			Random rand = new Random();
-			while(true){
-				if(this.mouseMove && System.currentTimeMillis() - startTime > 5000){
+			while (true) {
+				if (this.mouseMove && System.currentTimeMillis() - startTime > 5000) {
 					r.mouseMove(rand.nextInt(200), rand.nextInt(200));
 					startTime = System.currentTimeMillis();
 				}
@@ -116,7 +115,6 @@ public class ScreenCast {
 				socket.close();
 			}
 
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (AWTException e) {
@@ -124,10 +122,10 @@ public class ScreenCast {
 			e.printStackTrace();
 		}
 	}
-	
-	ServerSocket  server;
+
+	ServerSocket server;
 	Socket socket;
-	
+
 	/*
 	 * Handles Server side interactions
 	 */
@@ -136,13 +134,12 @@ public class ScreenCast {
 			server = new ServerSocket(port);
 			Robot r = new Robot();
 
-			while(true){
-				try{
+			while (true) {
+				try {
 					socket = server.accept();
 					InetAddress addr = socket.getInetAddress();
 					System.out.println(
-							"Received Connection From " + addr.getCanonicalHostName()
-									+ " at " + addr.getHostAddress());
+							"Received Connection From " + addr.getCanonicalHostName() + " at " + addr.getHostAddress());
 					ObjectOutputStream outstream = new ObjectOutputStream(socket.getOutputStream());
 					BufferedImage img;
 					img = r.createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
@@ -157,31 +154,31 @@ public class ScreenCast {
 				}
 			}
 
-		}  catch (AWTException e) {
+		} catch (AWTException e) {
 			e.printStackTrace();
 		} catch (IOException e1) {
 			e1.printStackTrace();
-		} 
+		}
 	}
-	
+
 	/*
 	 * Helper method for screen capturing
 	 */
-	public static BufferedImage resize(BufferedImage img, int newW, int newH) { 
-	    Image tmp = img.getScaledInstance(newW, newH, Image.SCALE_SMOOTH);
-	    BufferedImage dimg = new BufferedImage(newW, newH, BufferedImage.TYPE_INT_ARGB);
+	public static BufferedImage resize(BufferedImage img, int newW, int newH) {
+		Image tmp = img.getScaledInstance(newW, newH, Image.SCALE_SMOOTH);
+		BufferedImage dimg = new BufferedImage(newW, newH, BufferedImage.TYPE_INT_ARGB);
 
-	    Graphics2D g2d = dimg.createGraphics();
-	    g2d.drawImage(tmp, 0, 0, null);
-	    g2d.dispose();
+		Graphics2D g2d = dimg.createGraphics();
+		g2d.drawImage(tmp, 0, 0, null);
+		g2d.dispose();
 
-	    return dimg;
-	}  
-	
+		return dimg;
+	}
+
 	/*
 	 * Closes current conection
 	 */
-	private void close(){
+	private void close() {
 		try {
 			socket.close();
 			server.close();

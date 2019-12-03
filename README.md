@@ -15,8 +15,13 @@ List all the features of your application in the order of priority.
 3. Voice Chat
 
 
-## Team members
+## Team Members
 
 * Yuan Gao, Back end
 * Jason Ngan, Front end
 
+## How to Run
+
+* For the host, type: server (port) - without brackets (port can be any integer between 1024 and 65534).	Ex. localhost>>> server 10000
+ 	
+* For the client, type: client (server address) (server port) - without brackets.	Ex. localhost>>> client 127.0.0.1 10000
