@@ -6,18 +6,19 @@ Our project is about sharing screens with people and allowing them to text to ea
 
 ## Getting started
 
+### Install
 Clone the url and import it to eclipse.
 
 ## How to Run
 
-Run the ScreenCaster class and type on the console.
+Right click on the project from eclipse and click run.
+Next, follow the instructions on the console.
 
 * For the host, type: server (port) - without brackets (port can be any integer between 1024 and 65534).	Ex. localhost>>> server 10000
  	
-* For the client, type: client (server address) (server port) - without brackets.	Ex. localhost>>> client 127.0.0.1 10000
+* For the client, type: client (server IP address) (server port) - without brackets.	Ex. localhost>>> client 127.0.0.1 10000
 
 ## Features 
-List all the features of your application in the order of priority.
 1. Share Screen
 2. Text Chat (Future work)
 3. Voice Chat (Future work)
