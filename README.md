@@ -9,7 +9,8 @@ Our project is about sharing screens with people and allowing them to text to ea
 ### Install
 Clone the url and import it to eclipse.
 
-## How to Run
+
+### How to Run
 
 Right click on the project from eclipse and click run.
 Next, follow the instructions on the console.
