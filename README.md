@@ -20,14 +20,15 @@ Next, follow the instructions on the console.
 * For the client, type: client (server IP address) (server port) - without brackets.	Ex. localhost>>> client 127.0.0.1 10000
 
 ## Features 
+
 1. Share Screen
 2. Text Chat (Future work)
 3. Voice Chat (Future work)
 
 ## Demo video
 
-https://youtu.be/KE_6NZ9zN2w
-Due to the lack of funding, we had to use a free recording software which resulted with watermarks in the video.
+Demo video link: https://youtu.be/KE_6NZ9zN2w
+* Due to the lack of funding, we had to use a free recording software which resulted with watermarks in the video.
 
 ## References
 
