@@ -28,7 +28,7 @@ Next, follow the instructions on the console.
 ## Demo video
 
 Demo video link: https://youtu.be/KE_6NZ9zN2w
-* Due to the lack of funding, we had to use a free recording software which resulted with watermarks in the video.
+* Due to the lack of funding, we had to use a free recording software which resulted with watermarks being in the video.
 
 ## References
 
