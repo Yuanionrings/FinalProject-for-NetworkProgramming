@@ -33,6 +33,8 @@ Due to the lack of funding, we had to use a free recording software which result
 
 NishuAggarwalCheck out this Author's contributed articles., et al. “Java Program to Take Screenshots.” GeeksforGeeks, 18 Jan. 2018, https://www.geeksforgeeks.org/java-program-take-screenshots/.
 
+khin, josef. “r/Java - Need Some Help on Screen Capturing on Java. Any Tips?” Reddit, https://www.reddit.com/r/java/comments/e9dldz/need_some_help_on_screen_capturing_on_java_any/.
+
 Minh, Nam Ha. “How to Capture Screenshot Programmatically in Java.” CodeJava, 10 Aug. 2019, https://www.codejava.net/java-se/graphics/how-to-capture-screenshot-programmatically-in-java.
 
 ## Team Members
