@@ -30,6 +30,10 @@ List all the features of your application in the order of priority.
 
 ## References
 
+NishuAggarwalCheck out this Author's contributed articles., et al. “Java Program to Take Screenshots.” GeeksforGeeks, 18 Jan. 2018, https://www.geeksforgeeks.org/java-program-take-screenshots/.
+
+Minh, Nam Ha. “How to Capture Screenshot Programmatically in Java.” CodeJava, 10 Aug. 2019, https://www.codejava.net/java-se/graphics/how-to-capture-screenshot-programmatically-in-java.
+
 ## Team Members
 
 * Yuan Gao, Back end
