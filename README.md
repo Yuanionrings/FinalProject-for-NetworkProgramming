@@ -7,7 +7,7 @@ Our project is about sharing screens with people and allowing them to text to ea
 ## Getting started
 
 ### Install
-Clone the url and import it to eclipse.
+Copy the git url and import it as a existing git project into eclipse.
 
 
 ### How to Run
